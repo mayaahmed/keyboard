@@ -30,3 +30,20 @@ function number_write(x)
   }
 }
 
+function google()
+{
+  var str = string;
+  str=decodeURIComponent(str);
+str="https://translate.google.com?hl=en&source=hp&q" + str + "&aq=f&oq=&aqi=";
+
+popitup(str);
+
+  
+}
+
+function popitup(url) {
+  newwindow=window.open(url,'_blank', 'location=yes');
+ if (window.focus) {newwindow.focus()}
+ return false;
+}
+
